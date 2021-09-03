@@ -19,16 +19,12 @@ header {
     margin-bottom: 6.66vw;
     width: 9.8vw;
     height: 5.8vw;
-    background: rgb(197, 20, 20);
 }
 .shortly {
     display: flex;
     justify-content: space-between;
     width: 35.28vw;
     height: 2.5vw;
-}
-.one {
-    display: flex;
 }
 .short {
     font-size: 1.39vw;
@@ -41,7 +37,6 @@ header {
 .icon {
     margin: 0px;
     height: 1.45vw;
-    background-color: blueviolet;
     width: 1.45vw;
 }
 main {
@@ -57,6 +52,7 @@ main {
     margin-top: 2.01vw;
 }
 h1 {
+    margin: 0;
     margin-bottom: 0px;
     height: 13.20vw;
     width: 43.61vw;
@@ -65,17 +61,33 @@ h1 {
     font-weight: 700;
     font-size: 5.55vw;
 }
+.one {
+    display: flex;
+}
 .under {
     width: 28.75vw;
     margin: 0px;
     height: 4.3vw;
     font-size: 1.39vw;
 }
-.men-sg {
+.right-fir {
+    display: flex;
+    position: relative;
+}
+.man-sitting {
+    z-index: 1;
     margin-left: 9.72vw;
     width: 21.11vw;
     height: 24.72vw;
-    background-color: cornflowerblue;
+}
+.shadow-1 {
+    z-index: 0;
+    position: absolute;
+    margin: 0px;
+    right: -1vw;
+    bottom: -2vw;
+    width: 19vw;
+    height: 2.85vw;
 }
 .quote {
     display: flex;
@@ -133,17 +145,26 @@ h2 {
     font-size: 1.57vw;
     line-height: 2.5vw;
 }
-.menwc {
+.right-sec{
+    display: flex;
+    position: relative;
+}
+.man-with-camera {
+    z-index: 1;
     margin: 0px;
     margin-top: 2.92vw;
     margin-right: 13.20vw;
     width: 21.8vw;
     height: 21.875vw;
     margin-left: 10.625vw;
-    background-color: tomato;
 }
-.shadow {
-    margin: 0px;
+.shadow-2 {
+    z-index: 0;
+    position: absolute;
+    right: 11vw;
+    bottom: -1vw;
+    width: 25.42vw;
+    height: 4.1vw;
 }
 .quantity {
     margin-top: 6.46vw;
@@ -153,12 +174,25 @@ h2 {
 .right-thr {
     display: flex;
 }
-.menswc {
+.left-thr {
+    display: flex;
+    position: relative;
+}
+.man-sitting-with-camera {
+    z-index: 1;
     margin: 0px;
     width: 16.11vw;
     height: 14.1vw;
-    background-color: turquoise;
     margin-right: 9.17vw;
+}
+.shadow-3 {
+    z-index: 0;
+    width: 13.125;
+    height: 2.22vw;
+    margin: 0px;
+    position: absolute;
+    bottom: -1vw;
+    left: 2vw;
 }
 .period {
     margin-top: 4.86vw;
@@ -227,7 +261,6 @@ li {
     width: 100%;
     margin: 0px;
     height: 48.78%;
-    background-color: rgb(255, 40, 129);
 }
 .dateby {
     padding-right: 1.39vw;
@@ -312,7 +345,6 @@ span {
     border-radius: 50%;
     height: 11.74vw;
     width: 13.20vw;
-    background-color: lightcoral;
     margin: 0px;
     margin-left: 1.8vw;
     margin-right: 2.08vw;
@@ -321,11 +353,9 @@ span {
     position: absolute;
     left: 17vw;
     bottom: 2vw;
-    background-color: lightskyblue;
     margin: 0px;
     width: 2.22vw;
     height: 2.15vw;
-    text-align: center;
 }
 .price {
     margin: 0px;
@@ -380,7 +410,6 @@ footer {
     position: relative;
 }
 .media {
-    background-color: rosybrown;
     margin-top: 2vw;
     margin-right: 1.25vw;
     width: 2.3vw;
@@ -393,4 +422,376 @@ footer {
     position: absolute;
     top: 2vw;
     right: 7vw;
+}
+.number {
+    margin: 0px;
+    width: 1.8vw;
+    height: 1.8vw;
+}
+.mail {
+    margin: 0px;
+    width: 1.8vw;
+    height: 1.25vw;
+}
+.contact-container {
+    margin: 0px;
+    display: flex;
+}
+.contact {
+    display: flex;
+    margin: 0px;
+    margin-bottom: 1.46vw;
+}
+@media (max-width: 991px) {
+    .text {
+        font-size: 3.2vw;
+        line-height: 130%;
+    }
+    header {
+        margin-top: 9.6vw;
+        margin-left: 9.34vw;
+        margin-bottom: 2.3vw;
+    }
+    .logo {
+        margin-bottom: 11.9vw;
+        width: 13.32vw;
+        height: 8.2vw;
+    }
+    .shortly {
+        width: 64vw;
+        height: 3vw;
+    }
+    .one {
+        display: flex;
+    }
+    .short {
+        font-size: 2.67vw;
+        margin-left: 1.34vw;
+        height: 100%;
+        width: 16.54vw;
+        line-height: 115%;
+    }
+    .icon {
+        height: 2.74vw;
+        width: 2.74vw;
+    }
+    main {
+        padding-left: 9.6vw;
+    }
+    .begin {
+        display: block;
+        margin-bottom: 10.3vw;
+    }
+    .left-fir {
+        margin-top: 3.2vw;
+    }
+    h1 {
+        height: 20.54vw;
+        width: 73.6vw;
+        line-height: 101.38%;
+        font-size: 9.87vw;
+        margin-bottom: 3.74vw;
+    }
+    .under {
+        width: 56.64vw;
+        height: 7.74vw;
+        font-size: 2.66vw;
+    }
+    .man-sitting {
+        z-index: 1;
+        margin-left: 44.27vw;
+        width: 38vw;
+        height: 46.7vw;
+    }
+    .shadow-1 {
+        z-index: 0;
+        right: 4vw;
+        bottom: -3vw;
+        width: 34vw;
+        height: 5.1vw;
+    }
+    .quote {
+        width: 60vw;
+        height: 24.85vw;
+        margin-bottom: 20vw;
+        border-radius: 1.33vw;
+        margin-left: 3.2vw;
+        /*padding: 2.67vw;*/
+    }
+    .white {
+        line-height: 3.81vw;
+        font-size: 2.9vw;
+        padding-bottom: 1.87vw;
+        padding-top: 2.4vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    .by {
+        font-size: 2.67vw;
+        line-height: 3.47vw;
+    }
+    h2 {
+        font-size: 7vw;
+        line-height: 7.02vw;
+        width: 65.6vw;
+        max-height: 14.14vw;
+    }
+    .about {
+        display: block;
+        height: auto;
+    }
+    .left-sec{
+        margin-top: 6.14vw;
+        width: 82.14vw;
+        height: 56.8vw;
+        font-size: 3.2vw;
+        line-height: 4.8vw;
+    }
+    .right-sec{
+        display: flex;
+        position: relative;
+    }
+    .man-with-camera {
+        margin-top: 4.54vw;
+        /*margin-right: 17.6vw;*/
+        width: 39vw;
+        height: 42.744vw;
+        margin-left: 17.6vw;
+    }
+    .shadow-2 {
+        right: 25vw;
+        bottom: -3vw;
+        width: 45.48vw;
+        height: 7.34vw;
+    }
+    .quantity {
+        margin-top: 15.8vw;
+        display: flex;
+        margin-bottom: 11.74vw;
+    }
+    .right-thr {
+        flex-wrap: wrap;
+    }
+    .left-thr {
+        display: none;
+    }
+    .period {
+        margin: 0vw;
+        margin-right: 8.8vw;
+        height: 12vw;
+        width: 23.2vw;
+        margin-bottom: 7vw;
+    }
+    h3 {
+        height: 3.2vw;
+        width: 15.2vw;
+        font-size: 3.2vw;
+        margin-bottom: 1.87vw;
+    }
+    .discr {
+        height: 7vw;
+        width: 20.8vw;
+        font-size: 2.67vw;
+    }
+    .study-info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 8.54vw;
+        margin-bottom: 11.47vw;
+    }
+    .afford {
+        height: 11.74vw;
+        width: 48vw;
+        margin-right: 0vw;
+        margin-bottom: 8.8vw;
+    }
+    .afford-discr {
+        margin-top: 1.33vw;
+        max-height: 10.4vw;
+        width: 48vw;
+    }
+    .blue-text {
+        width: 26.67vw;
+        height: 3.74vw;
+    }
+    ul {
+        padding-left: 1.34vw;
+        height: 52vw;
+        width: 79.74vw;
+        margin-left: 0.54vw;
+        margin-top: 5.87vw;
+        margin-bottom: 17vw;
+    }
+    li {
+        line-height: 4.8vw;
+        font-size: 3.2vw; 
+    }
+    .cards-container {
+        width: auto;
+        /*right: 8vw;*/
+        display: block;
+        margin-bottom: 12.6vw;
+        margin-top: 12.8vw;
+    }
+    .card {
+        margin: 0;
+        margin-left: 16vw;
+        margin-bottom: 6.44vw;
+        border-radius: 4vw;
+        width: 49.58vw;
+        height: 40.76vw;
+    }
+    .dateby {
+        padding-right: 10.4vw;
+        padding-left: 2.49vw;
+    }
+    h4 {
+        font-size: 3.74vw;
+    }
+    .btw {
+        font-size: 3.2vw;
+        margin-top: 3.94vw;
+    }
+    .btwn {
+        font-size: 3.2vw;
+    }
+    span {
+        line-height: 3.6vw;
+    }
+    .grey {
+        flex-direction: column;
+        margin-left: -8.47vw;
+        justify-content: space-between;
+        display: flex;
+        position: static;
+        height: 112.8vw;
+        background-color: #EFEFEF;
+    }
+    .ek-pa {
+        display: flex;
+    }
+    .h-s {
+        margin-left: 9.6vw;
+        margin-top: 11.2vw;
+        width: 65.6vw;
+        font-size: 6.933vw;
+    }
+    .feedback {
+        margin-top: 7.2vw;
+        margin-left: 8.47vw;
+        width: 82.14vw;
+        height: 66.14vw;
+        border-radius: 4vw;
+        margin-bottom: 14.14vw;
+
+    }
+    .t-fb {
+        padding-left: 5.6vw;
+        padding-top: 4.925vw;
+        padding-right: 5.6vw;
+        font-size: 2.67vw;
+        line-height: 4vw;
+        height: 31.74vw;
+        width: 71vw;
+    }
+    .slab {
+        width: 43.74vw;
+        font-size: 3.74vw;
+        margin-top: 8.54vw;
+    }
+    .image-2 {
+        padding-left: 5.6vw;
+        border-radius: 0;
+        height: 22vw;
+        width: 22vw;
+        margin-left: 0;
+        margin-right: 3.733vw;
+        margin-top: 3.73vw;
+    }
+    .facebook {
+        position: static;
+        width: 4vw;
+        margin-top: 4.4vw;
+        height: 4.59vw;
+    }
+    .ek-pa-right {
+        margin: 0px;
+    }
+    .price {
+        margin-left: -9.6vw;
+        height: 96.8vw;
+        padding-left: 9.6vw;
+    }
+    h5{
+        font-size: 6.93vw;
+        width: 58vw;
+        padding-top: 16.53vw;
+        margin-bottom: 7.55vw;
+    }
+    .for {
+        margin-right: 8.27vw;
+    }
+    .cost {
+        width: 45vw;
+        height: 10.93vw;
+        font-size: 9.87vw;
+        line-height: 10vw;
+        margin-bottom: 8.4vw;
+    }
+    .discr-2 {
+        margin-top: 1.216vw;
+        width: 36.8vw;
+        font-size: 2.67vw;
+    }
+    footer {
+        display: flex;
+        position: relative;
+        height: 67vw;
+        padding-left: 10.4vw;
+        padding-top: 6.21vw;
+        padding-right: 50.352vw;
+    }
+    .wh {
+        margin: 0px;
+    }
+    .icons {
+        display: flex;
+        margin: 0px;
+        margin-top: 3.74vw;
+    }
+    .media {
+        margin-top: 0vw;
+        margin-right: 3.2vw;
+        width: 4.13vw;
+        height: 4vw;
+    }
+    .company {
+        margin-top: 36.7vw;
+        font-size: 2.67vw;
+        width: 30.4vw;
+    }
+    .number {
+        margin: 0px;
+        width: 3.36vw;
+        height: 3.36vw;
+    }
+    .mail {
+        padding-top: 1vw;
+        width: 3.36vw;
+        height: 2.24vw;
+    }
+    .contacts {
+        position: absolute;
+        top: 30vw;
+        left: 9vw;
+    }
+    .contact-container {
+        display: flex;
+    }
+    .contact {
+        display: block;
+        margin: 0px;
+        margin-bottom: 1.6vw;
+        margin-left: 2.74vw;
+    }
 }
